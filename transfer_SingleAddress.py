@@ -8,8 +8,8 @@ web3.middleware_onion.inject(geth_poa_middleware, layer=0)
 
 
 # Set sender and recipient addresses
-sender_address = '0xSenderAddress'
-recipient_address = '0xReceiverAddress'
+sender_address = web3.to_checksum_address('0xSenderAddress')
+recipient_address = web3.to_checksum_address('0xReceiverAddress')
 
 # Set private key for the sender's account. 
 private_key = '0xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' # DO NOT SHARE YOUR PRIVATE KEY.
